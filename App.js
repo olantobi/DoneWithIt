@@ -1,5 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
-import { Dimensions, StyleSheet, Text, TouchableHighlight, View, Alert, Button, Image, SafeAreaView } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { useRef, useState } from 'react';
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
@@ -109,9 +108,3 @@ export default function App() {
       </MapView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
